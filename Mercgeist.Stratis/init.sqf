@@ -109,6 +109,9 @@ if (hasInterface || isServer) then
 	
 };
 
+// Server restart message
+"RM_DISPLAYTEXT_PUBVAR" addPublicVariableEventHandler {(_this select 1) spawn BIS_fnc_dynamicText;};
+
 // Remove line drawings from map
 (createTrigger ["EmptyDetector", [0,0,0], false]) setTriggerStatements
 [

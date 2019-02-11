@@ -10,9 +10,7 @@
 if (!isServer) exitwith {};
 #include "sideMissionDefines.sqf"
 
-private ["_geoPos", "_geoCache", "_cash", "_moneyAmount", "_marker1", "_minesToDelete", "_boxes1", "_box1", "_para", "_smoke"];
-
-_moneyAmount = Tier_1_Reward; //Reward amount for completing mission
+private ["_geoPos", "_geoCache", "_cash", "_marker1", "_minesToDelete", "_boxes1", "_box1", "_para", "_smoke"];
 
 _setupVars =
 {
@@ -112,13 +110,13 @@ _successExec =
 
 	//Money
 		
-	for "_i" from 1 to 10 do
+	for "_x" from 1 to 5 do
 	{
-		_cash = createVehicle ["Land_Money_F", _missionPos, [], 5, "NONE"];
-		_cash setPos ([_missionPos, [[2 + random 3,0,0], random 360] call BIS_fnc_rotateVector2D] call BIS_fnc_vectorAdd);
+		_cash = "Land_Money_F" createVehicle markerPos _marker;
+		_cash setPos ((markerPos _marker) vectorAdd ([[2 + random 2,4,6], random 360] call BIS_fnc_rotateVector2D));
 		_cash setDir random 360;
-		_cash setVariable ["cmoney", _moneyAmount / 10, true];
-		_cash setVariable ["owner", "world", true];
+		_cash setVariable["cmoney",10000,true];
+		_cash setVariable["owner","world",true];
 	};
 	
 	_successHintMessage = "You survived the minefield! The GeoCache supplies and cash have been delivered by parachute!";

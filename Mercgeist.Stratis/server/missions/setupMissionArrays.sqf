@@ -3,15 +3,16 @@
 // ******************************************************************************************
 //	@file Name: setupMissionArrays.sqf
 //	@file Author: AgentRev
+//  @file Edit: 11/02/2019 by [iM3RC] Sp4wN7
 
 if (!isServer) exitWith {};
 
 MainMissions =
 [
 	// Mission filename, weight
-	["mission_ArmedDiversquad", 1],
-	["mission_Arty", 1],
-	["mission_Coastal_Convoy", 1],
+	["mission_ArmedDiversquad", 0.5],
+	["mission_Arty", 0.5],
+	["mission_Coastal_Convoy", 0.5],
 	["mission_Convoy", 1],
 	["mission_HostileHeliFormation", 0.5],
 	["mission_HostileJetFormation", 0.5],
@@ -20,6 +21,8 @@ MainMissions =
 	["mission_LightArmVeh", 1],
 	["mission_ArmedHeli", 1],
 	["mission_AbandonedJet", 0.5],
+	["mission_VehicleCapture", 1],
+	["mission_tankRush", 0.5],
 	["mission_CivHeli", 1]
 ];
 
@@ -29,16 +32,16 @@ SideMissions =
 	["mission_HostileJet", 0.5],
 	["mission_AirWreck", 1],
 	["mission_MiniConvoy", 1],
-	["mission_drugsRunners", 1.5],
+	["mission_drugsRunners", 1],
 	["mission_HostageRescue", 1],
 	["mission_WepCache", 1],
 	["mission_SunkenSupplies", 0.5],
 	["mission_TownInvasion", 1],
 	["mission_Outpost", 1],
-	//["mission_geoCache", 1],
+	["mission_geoCache", 1],
 	["mission_Sniper", 1],
-	["mission_Smugglers", 1],
-	["mission_Roadblock", 1.5],
+	["mission_Smugglers", 0.5],
+	["mission_Roadblock", 1],
 	["mission_ConvoyCSATSF", 1],
 	["mission_Truck", 1]
 ];
@@ -67,6 +70,7 @@ if !(ForestMissionMarkers isEqualTo []) then
 
 LandConvoyPaths = (call compile preprocessFileLineNumbers "mapConfig\convoys\landConvoysList.sqf") apply {[_x, false]};
 CoastalConvoyPaths = (call compile preprocessFileLineNumbers "mapConfig\convoys\coastalConvoysList.sqf") apply {[_x, false]};
+RushConvoyPaths = (call compile preprocessFileLineNumbers "mapConfig\convoys\rushConvoysList.sqf") apply {[_x, false]};
 
 MainMissions = [MainMissions, [["A3W_heliPatrolMissions", ["mission_Coastal_Convoy", "mission_HostileHeliFormation"]], ["A3W_underWaterMissions", ["mission_ArmedDiversquad"]]]] call removeDisabledMissions;
 SideMissions = [SideMissions, [["A3W_heliPatrolMissions", ["mission_HostileHelicopter"]], ["A3W_underWaterMissions", ["mission_SunkenSupplies"]]]] call removeDisabledMissions;

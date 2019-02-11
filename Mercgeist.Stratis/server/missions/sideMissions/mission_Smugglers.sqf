@@ -3,6 +3,7 @@
 // ******************************************************************************************
 //	@file Name: mission_Smugglers.sqf
 //	@file Author: JoSchaap, AgentRev, LouD
+//  @file Edit: 11/02/2019 by [iM3RC] Sp4wN7
 
 if (!isServer) exitwith {};
 #include "sideMissionDefines.sqf";

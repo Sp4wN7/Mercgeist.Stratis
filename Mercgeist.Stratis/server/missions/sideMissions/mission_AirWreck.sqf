@@ -10,7 +10,7 @@
 if (!isServer) exitwith {};
 #include "sideMissionDefines.sqf"
 
-private ["_nbUnits", "_wreckPos", "_wreck", "_boxes1", "_boxes2", "_box1", "_box2", "_fire"];
+private ["_nbUnits", "_wreckPos", "_wreck", "_boxes1", "_boxes2", "_box1", "_box2", "_fire", "_drop_item", "_drugpilerandomizer", "_drugpile"];
 
 _setupVars =
 {
@@ -55,7 +55,7 @@ _setupObjects =
 	[_aiGroup, _missionPos, _nbUnits] call createCustomGroup4;
 
 	_missionPicture = getText (configFile >> "CfgVehicles" >> typeOf _wreck >> "picture");
-	_missionHintText = "An aircraft has come down and is being guarded by the enemy! Get to it!";
+	_missionHintText = "A narco aircraft has come down carrying arms and drugs! Cartel are attempting to recover it! Go get it!";
 };
 
 _waitUntilMarkerPos = nil;
@@ -69,6 +69,25 @@ _failedExec =
 };
 
 // Mission completed
+
+	_drop_item = 
+	{
+		private["_item", "_pos"];
+		_item = _this select 0;
+		_pos = _this select 1;
+
+		if (isNil "_item" || {typeName _item != typeName [] || {count(_item) != 2}}) exitWith {};
+		if (isNil "_pos" || {typeName _pos != typeName [] || {count(_pos) != 3}}) exitWith {};
+
+		private["_id", "_class"];
+		_id = _item select 0;
+		_class = _item select 1;
+
+		private["_obj"];
+		_obj = createVehicle [_class, _pos, [], 5, "None"];
+		_obj setPos ([_pos, [[2 + random 3,0,0], random 360] call BIS_fnc_rotateVector2D] call BIS_fnc_vectorAdd);
+		_obj setVariable ["mf_item_id", _id, true];
+	};
 
 	_successExec =
 	{
@@ -86,9 +105,27 @@ _failedExec =
 		
 		{ _x setVariable ["R3F_LOG_disabled", false, true] } forEach [_box1, _box2, _wreck];	//Allows crates to be picked up and carried
 
+		
+		//Drugs
+		
+		_drugpilerandomizer = [6,8,10];
+		_drugpile = _drugpilerandomizer call BIS_fnc_SelectRandom;
+	
+		for "_i" from 1 to _drugpile do 
+		{
+			private["_item"];
+			_item = [
+					["lsd", "Land_WaterPurificationTablets_F"],
+					["marijuana", "Land_VitaminBottle_F"],
+					["cocaine","Land_PowderedMilk_F"],
+					["heroin", "Land_PainKillers_F"]
+				] call BIS_fnc_selectRandom;
+			[_item, _lastPos] call _drop_item;
+		};
+		
 		//Message
 		
-		_successHintMessage = "Great job! You've completed the mission! Rewards are at the wreck.";
+		_successHintMessage = "Great job! Check the area for weapons and narcotics.";
 
 	};
 

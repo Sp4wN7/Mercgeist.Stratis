@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=472;
+		nextID=478;
 	};
 	class Camera
 	{
-		pos[]={3091.8555,105.84991,6250.3818};
-		dir[]={-0.55927193,-0.52419555,-0.64224231};
-		up[]={-0.34425274,0.85158896,-0.39532384};
-		aside[]={-0.75415617,1.9477739e-007,0.65672964};
+		pos[]={2844.0403,316.25897,5972.73};
+		dir[]={0.56606346,-0.78029525,0.26607513};
+		up[]={0.70618927,0.62538201,0.3319405};
+		aside[]={0.42541593,1.1629236e-006,-0.90505576};
 	};
 };
 binarizationWanted=0;
@@ -652,14 +652,14 @@ class Mission
 					};
 					id=199;
 					type="C_man_1_1_F";
-					atlOffset=0.52858686;
+					atlOffset=0.52858639;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=198;
-			atlOffset=0.52858686;
+			atlOffset=0.52858639;
 		};
 		class Item8
 		{
@@ -4147,8 +4147,8 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={1916.7292,9.6900024,5756.0273};
-								angles[]={0,1.8210207,0};
+								position[]={1916.729,9.6900005,5756.0269};
+								angles[]={0,1.8210242,0};
 							};
 							side="Empty";
 							class Attributes
@@ -4159,7 +4159,7 @@ class Mission
 							};
 							id=7369;
 							type="UserTexture1m_F";
-							atlOffset=3.413177;
+							atlOffset=3.4131746;
 						};
 						class Item1
 						{
@@ -4204,8 +4204,8 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={1915.813,9.6900024,5752.5996};
-								angles[]={0,1.8210207,0};
+								position[]={1915.813,9.6900005,5752.6001};
+								angles[]={0,1.8210242,0};
 							};
 							side="Empty";
 							class Attributes
@@ -4216,7 +4216,7 @@ class Mission
 							};
 							id=7372;
 							type="UserTexture1m_F";
-							atlOffset=4.0000024;
+							atlOffset=4.0000005;
 						};
 						class Item4
 						{
@@ -4278,44 +4278,46 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={1916.1383,8.4400024,5753.75};
-								angles[]={0,1.8210207,0};
+								position[]={1916.1379,8.4400005,5753.75};
+								angles[]={0,1.8210242,0};
 							};
 							side="Empty";
 							class Attributes
 							{
 								skill=0.60000002;
+								init="this setObjectTexture [0, ""media\team\bull_im3rc.paa""];";
 								name="Sig_N_2_3";
 							};
 							id=7380;
 							type="UserTexture1m_F";
-							atlOffset=2.1624413;
+							atlOffset=2.1624393;
 						};
 						class Item8
 						{
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={1915.8008,8.4400024,5752.5947};
-								angles[]={0,1.8210207,0};
+								position[]={1915.801,8.4400005,5752.5952};
+								angles[]={0,1.8210242,0};
 							};
 							side="Empty";
 							class Attributes
 							{
 								skill=0.60000002;
+								init="this setObjectTexture [0, ""media\team\shadowbow_im3rc.paa""];";
 								name="Sig_N_2_4";
 							};
 							id=7381;
 							type="UserTexture1m_F";
-							atlOffset=2.7500024;
+							atlOffset=2.7500005;
 						};
 						class Item9
 						{
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={1915.5011,8.4400005,5751.4551};
-								angles[]={0,1.8210174,0};
+								position[]={1915.501,8.4400005,5751.4551};
+								angles[]={0,1.8210242,0};
 							};
 							side="Empty";
 							class Attributes
@@ -25465,6 +25467,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				init="[this] call A3W_fnc_setupMissionObject";
 			};
 			id=7178;
 			type="Land_Canal_WallSmall_10m_F";
@@ -25541,6 +25544,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				init="[this] call A3W_fnc_setupMissionObject";
 			};
 			id=7182;
 			type="Land_Canal_WallSmall_10m_F";
@@ -25574,6 +25578,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				init="[this] call A3W_fnc_setupMissionObject";
 			};
 			id=7184;
 			type="Land_Canal_WallSmall_10m_F";
@@ -25744,6 +25749,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				init="[this] call A3W_fnc_setupMissionObject";
 			};
 			id=7192;
 			type="Land_Canal_WallSmall_10m_F";
