@@ -9,5 +9,5 @@ sleep 10;
         };
         [[format["Welcome to MERCGEIST", _worldName],"", format["We shall see you in Valhalla, %1", name player],"","","","",""," ","","","",""], -.5, .85] call BIS_fnc_typeText;
         //sleep 2;
-        [["On the web at","MERCGEIST.com","","and","mercgeist.teamspeak3.com","",""], .5, .85] call BIS_fnc_typeText;
+        [["On the web at","mercgeist.com","","and","mercgeist.teamspeak3.com","",""], .5, .85] call BIS_fnc_typeText;
 };

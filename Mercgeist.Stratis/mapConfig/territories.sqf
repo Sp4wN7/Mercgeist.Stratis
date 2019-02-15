@@ -29,6 +29,7 @@
 	["TERRITORY_KAMINO_SETTLEMENT", "Kamino Settlement", 250, "TOWN"],
 	["TERRITORY_KILL_FARM", "Kill Farm", 250, "TOWN"],
 	["TERRITORY_LIMERI_BAY", "Limeri Bay", 250, "TOWN"],
+	["TERRITORY_NISI_BAY", "Nisi Bay", 250, "TOWN"],
 	["TERRITORY_LZ_BALDY", "LZ Baldy", 250, "MILITARY"],
 	["TERRITORY_LZ_CONNOR", "LZ Connor", 250, "MILITARY"],
 	["TERRITORY_PYTHOS", "Pythos Island", 250, "ISLAND"],

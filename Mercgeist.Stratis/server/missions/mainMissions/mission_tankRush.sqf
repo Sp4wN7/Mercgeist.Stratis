@@ -27,8 +27,9 @@ _setupObjects =
 	// Pick the vehicles for the patrol. Only one set at the moment. Will add more later.
 	_convoyVeh = selectRandom	
 	[
-	["B_MBT_01_TUSK_F", "B_MBT_01_TUSK_F", "B_MBT_01_TUSK_F", "B_APC_Tracked_01_AA_F", "B_APC_Tracked_01_AA_F", "B_APC_Tracked_01_AA_F", "B_MBT_01_cannon_F", "B_MBT_01_cannon_F", "B_APC_Tracked_01_rcws_F", "B_AFV_Wheeled_01_cannon_F"], // BluFor Patrol
-	["O_MBT_04_command_F", "O_MBT_04_cannon_F", "O_MBT_04_cannon_F", "O_APC_Tracked_02_AA_F", "O_APC_Tracked_02_AA_F", "O_APC_Tracked_02_AA_F", "O_MBT_02_cannon_F", "O_MBT_02_cannon_F", "O_MBT_02_cannon_F", "O_APC_Tracked_02_cannon_F"] // OpFor  Patrol
+	["B_LSV_01_armed_F", "B_LSV_01_armed_F", "B_LSV_01_armed_F", "B_LSV_01_AT_F", "B_LSV_01_AT_F", "B_LSV_01_AT_F", "B_LSV_01_AT_F", "C_Van_02_service_F", "B_LSV_01_armed_F", "B_LSV_01_armed_F", "B_LSV_01_armed_F"] // Cartel  Patrol
+	//["B_MBT_01_TUSK_F", "B_MBT_01_TUSK_F", "B_MBT_01_TUSK_F", "B_APC_Tracked_01_AA_F", "B_APC_Tracked_01_AA_F", "B_APC_Tracked_01_AA_F", "B_MBT_01_cannon_F", "B_MBT_01_cannon_F", "B_APC_Tracked_01_rcws_F", "B_AFV_Wheeled_01_cannon_F"], // BluFor Patrol
+	//["O_MBT_04_command_F", "O_MBT_04_cannon_F", "O_MBT_04_cannon_F", "O_APC_Tracked_02_AA_F", "O_APC_Tracked_02_AA_F", "O_APC_Tracked_02_AA_F", "O_MBT_02_cannon_F", "O_MBT_02_cannon_F", "O_MBT_02_cannon_F", "O_APC_Tracked_02_cannon_F"] // OpFor  Patrol
 	];
 	
 	_veh1 = _convoyVeh select 0;
@@ -40,7 +41,17 @@ _setupObjects =
 	_veh7 = _convoyVeh select 6;
 	_veh8 = _convoyVeh select 7;
 	_veh9 = _convoyVeh select 8;
-//	_veh10 = _convoyVeh select 9;
+	_veh10 = _convoyVeh select 9;
+	_veh11 = _convoyVeh select 10;
+	//_veh12 = _convoyVeh select 11;
+	//_veh13 = _convoyVeh select 12;
+	//_veh14 = _convoyVeh select 13;
+	//_veh15 = _convoyVeh select 14;
+	//_veh16 = _convoyVeh select 15;
+	//_veh17 = _convoyVeh select 16;
+	//_veh18 = _convoyVeh select 17;
+	//_veh19 = _convoyVeh select 18;
+	//_veh20 = _convoyVeh select 19;
 
   _createVehicle = {
 		private ["_type","_position","_direction","_vehicle","_soldier"];

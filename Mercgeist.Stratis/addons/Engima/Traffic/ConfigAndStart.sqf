@@ -13,20 +13,15 @@ _parameters = [
 	["SIDE", civilian],
 	["VEHICLES", 
 		[
-		"C_Offroad_01_F",
-		"C_Quadbike_01_F", 
-		"C_Hatchback_01_F", 
+		"C_Truck_02_fuel_F",
+		"C_Truck_02_box_F", 
+		"C_Offroad_02_unarmed_F", 
+		"C_Van_02_service_F", 
+		"C_Van_02_medevac_F", 
 		"C_Hatchback_01_sport_F", 
-		"C_SUV_01_F", 
-		"C_Van_01_transport_F", 
-		"C_Van_01_box_F", 
-		"C_Van_01_fuel_F",
-		"C_Offroad_02_unarmed_F",
-		"C_Van_02_vehicle_F",
-		"C_Van_02_medevac_F",
-		"B_T_LSV_01_unarmed_F",
-		"O_T_LSV_02_unarmed_F",
-		"B_G_Offroad_01_F"		
+		"C_Truck_02_covered_F", 
+		"C_Offroad_01_repair_F",
+		"C_Offroad_01_F"
 		]
 	],
 	["VEHICLES_COUNT", 2],
