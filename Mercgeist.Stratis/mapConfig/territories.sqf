@@ -27,6 +27,7 @@
 	["TERRITORY_JAY_COVE", "Jay Cove", 250, "TOWN"],
 	["TERRITORY_KAMINO_FIRING_RANGE", "Kamino Firing Range", 500, "MILITARY"],
 	["TERRITORY_KAMINO_SETTLEMENT", "Kamino Settlement", 250, "TOWN"],
+	["TERRITORY_KAMINO_BAY", "Kamino Bay", 250, "TOWN"],
 	["TERRITORY_KILL_FARM", "Kill Farm", 250, "TOWN"],
 	["TERRITORY_LIMERI_BAY", "Limeri Bay", 250, "TOWN"],
 	["TERRITORY_NISI_BAY", "Nisi Bay", 250, "TOWN"],

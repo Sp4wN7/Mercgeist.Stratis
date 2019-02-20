@@ -144,7 +144,7 @@ _setupObjects =
 	_vehicleName2 = getText (configFile >> "CfgVehicles" >> _veh6 >> "displayName");
 	_vehicleName3 = getText (configFile >> "CfgVehicles" >> _veh9 >> "displayName");
 
-	_missionHintText = format ["A convoy containing at least<br/>a <t color='%4'>%1</t>, <br/>a <t color='%4'>%2</t> and <br/>a <t color='%4'>%3</t> is transporting a large amount of narcotics confiscated by the military from the cartels!", _vehicleName, _vehicleName2, _vehicleName3, mainMissionColor];
+	_missionHintText = format ["A convoy containing at least<br/>a <t color='%4'>%1</t>, <br/>a <t color='%4'>%2</t> and <br/>a <t color='%4'>%3</t> is transporting a large amount of seized narcotics worth thousands of dollars on the black market!", _vehicleName, _vehicleName2, _vehicleName3, mainMissionColor];
 
 	_numWaypoints = count waypoints _aiGroup;
 };
