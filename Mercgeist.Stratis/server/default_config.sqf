@@ -21,7 +21,7 @@ A3W_timeMultiplierNight = 3.0;     // Sets the speed of time between 8 PM and 5 
 A3W_moonLight = 1;                 // Moon light during night (0 = no, 1 = yes)
 
 // Player settings
-A3W_startingMoney = 1500;          // Amount of money that players start with
+A3W_startingMoney = 5000;          // Amount of money that players start with
 A3W_survivalSystem = 0;            // Food and water are required to stay alive (0 = no, 1 = yes) - 0 removes food and water items from the mission
 A3W_unlimitedStamina = 1;          // Allow unlimited sprinting, jumping, etc. (0 = no, 1 = yes) - this also removes energy drinks from the mission
 A3W_bleedingTime = 300;            // Time in seconds for which to allow revive after a critical injury (minimum 10 seconds) - to disable revive, go in addons\far_revive\FAR_defines.sqf
@@ -83,8 +83,8 @@ A3W_staticWeaponSaving = 1;        // Save locked static weapons and their magaz
 A3W_warchestSaving = 1;            // Save warchest objects deployed by players between server restarts (0 = no, 1 = yes)
 A3W_warchestMoneySaving = 1;       // Save warchest team money between server restarts (0 = no, 1 = yes)
 A3W_spawnBeaconSaving = 1;         // Save spawn beacons between server restarts (0 = no, 1 = yes)
-A3W_objectLifetime = 5*24;         // Maximum lifetime in hours for saved objects (baseparts, crates, etc. except vehicles) across server restarts (0 = no time limit)
-A3W_vehicleLifetime = 0;           // Maximum lifetime in hours for saved vehicles across server restarts, regardless of usage (0 = no time limit)
+A3W_objectLifetime = 14*24;         // Maximum lifetime in hours for saved objects (baseparts, crates, etc. except vehicles) across server restarts (0 = no time limit)
+A3W_vehicleLifetime = 5*24;           // Maximum lifetime in hours for saved vehicles across server restarts, regardless of usage (0 = no time limit)
 A3W_vehicleMaxUnusedTime = 2*24;   // Maximum parking time in hours after which unused saved vehicles will be marked for deletion (0 = no time limit)
 A3W_serverSavingInterval = 1*60;   // Interval in seconds between automatic vehicle & object saves; should be kept at 1 min for profileNamespace and iniDB, while for extDB it can be relaxed to 3-5 mins
 A3W_mineSaving = 1;                // Save player-placed proximity mines between server restarts (0 = no, 1 = yes) - doesn't save dispensed/cluster mines

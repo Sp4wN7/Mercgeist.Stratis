@@ -13,16 +13,17 @@ MainMissions =
 	["mission_ArmedDiversquad", 0],
 	["mission_Arty", 0],
 	["mission_Coastal_Convoy", 0],
-	["mission_Convoy", 1],
+	["mission_Convoy", 0],
 	["mission_HostileHeliFormation", 0],
 	["mission_HostileJetFormation", 0],
 	["mission_APC", 0],
 	["mission_MBT", 0],
 	["mission_LightArmVeh", 0],
 	["mission_ArmedHeli", 0],
-	["mission_AbandonedJet", 0],
+	["mission_AbandonedJet", 01],
+	["mission_AbandonedDrone", 1],
 	["mission_VehicleCapture", 0],
-	["mission_tankRush", 0.5],
+	["mission_tankRush", 0],
 	["mission_CivHeli", 0]
 ];
 

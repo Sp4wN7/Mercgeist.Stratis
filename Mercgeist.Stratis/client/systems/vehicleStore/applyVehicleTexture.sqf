@@ -42,7 +42,7 @@ if (_texture isEqualTo "") then // reset to default
 };
 
 // if painting on top of existing TextureSource, preserve non-colored selections
-if (_textures isEqualTypeArray [""]) then
+if (_textures isEqualType "") then
 {
 	_textures = getObjectTextures _veh;
 };
@@ -107,6 +107,8 @@ if (_texture isEqualType "") then
 //			case (_veh isKindOf "Heli_Transport_03_base_F"):       { [] };
 //			case (_veh isKindOf "Heli_Transport_04_base_F"):       { [] };
 
+			case (_veh isKindOf "Heli_Light_01_armed_base_F"):     { [1] };
+
 //			case (_veh isKindOf "Heli_Attack_02_base_F"):          { [] };
 
 //			case (_veh isKindOf "VTOL_Base_F"):                    { [] };
@@ -149,5 +151,5 @@ else
 	};
 };
 
-_veh setVariable ["A3W_objectTextures", if (isNil "_textureSource") then { _textures } else { [_textureSource] }, true];
+_veh setVariable ["A3W_objectTextures", if (isNil "_textureSource") then { _textures } else { _textureSource }, true];
 _veh setVariable ["A3W_objectTextures_missionDir", call currMissionDir, true]; // dirty workaround for bohemia's setObjectTextureGlobal client-server path mismatch retarded bullshit - https://feedback.bistudio.com/T80668

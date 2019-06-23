@@ -32,10 +32,16 @@ if((player == driver _vehicle) && (!_eng))then {
 	if(_type == "O_MRAP_02_gmg_F") then {_price = 500;};
 	if(_type == "I_MRAP_03_hmg_F") then {_price = 500;};
 	if(_type == "I_MRAP_03_gmg_F") then {_price = 500;};
+	if(_type == "B_T_LSV_01_armed_F") then {_price = 500;};
+	if(_type == "B_T_LSV_01_AT_F") then {_price = 500;};
+	if(_type == "O_T_LSV_02_armed_F") then {_price = 500;};
+	if(_type == "O_T_LSV_02_AT_F") then {_price = 500;};
 	if(_type == "B_G_Quadbike_01_F") then {_price = 500;};
 	if(_type == "O_APC_Wheeled_02_rcws_F") then {_price = 500;};
 	if(_type == "B_APC_Wheeled_01_cannon_F") then {_price = 500;};
 	if(_type == "I_APC_Wheeled_03_cannon_F") then {_price = 500;};
+	if(_type == "B_AFV_Wheeled_01_cannon_F") then {_price = 500;};
+	if(_type == "B_AFV_Wheeled_01_up_cannon_F") then {_price = 500;};
 	if(_type == "B_APC_Tracked_01_CRV_F") then {_price = 500;};	
 	if(_type == "B_APC_Tracked_01_rcws_F") then {_price = 500;};
 	if(_type == "I_APC_tracked_03_cannon_F") then {_price = 500;};
@@ -46,6 +52,8 @@ if((player == driver _vehicle) && (!_eng))then {
 	if(_type == "B_MBT_01_TUSK_F") then {_price = 500;};
 	if(_type == "O_MBT_02_cannon_F") then {_price = 500;};
 	if(_type == "I_MBT_03_cannon_F") then {_price = 500;};
+	if(_type == "O_MBT_04_cannon_F") then {_price = 500;};
+	if(_type == "O_MBT_04_command_F") then {_price = 500;};
 	if(_type == "B_Heli_Transport_01_F") then {_price = 1000;};
 	if(_type == "B_Heli_Transport_01_camo_F") then {_price = 1000;};
 	if(_type == "B_Heli_Light_01_dynamicLoadout_F") then {_price = 1000;};

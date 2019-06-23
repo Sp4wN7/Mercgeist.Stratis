@@ -19,7 +19,7 @@ _itemEntrySent params [["_class","",[""]]];
 _isGenStore = ["GenStore", _npcName] call fn_startsWith;
 _isGunStore = ["GunStore", _npcName] call fn_startsWith;
 _isVehStore = ["VehStore", _npcName] call fn_startsWith;
-_isArmsDealer = ["ArmsDealer", _marker] call fn_startsWith;
+_isArmsDealer = ["ArmsDealer", _npcName] call fn_startsWith;
 
 private _storeNPC = missionNamespace getVariable [_npcName, objNull];
 private _marker = _npcName;

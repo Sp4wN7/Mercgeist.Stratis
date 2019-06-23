@@ -1053,11 +1053,11 @@ planesArray = compileFinal str
 
 	["A-149 Gryphon", "I_Plane_Fighter_04_F", 50000, "vehicle"],
 
-	["F/A-181 Black Wasp (Gun-Only)", "B_Plane_Fighter_01_Stealth_F", 20000, "vehicle"], // no missiles or bombs
-	["F/A-181 Black Wasp AA", "B_Plane_Fighter_01_F", 40000, "vehicle", "variant_blackwaspAA"],
-	["F/A-181 Black Wasp CAS", "B_Plane_Fighter_01_F", 65000, "vehicle", "variant_blackwaspCAS"],
+	["F/A-181 Black Wasp (Gun-Only)", "B_Plane_Fighter_01_Stealth_F", 30000, "vehicle"], // no missiles or bombs
+	["F/A-181 Black Wasp AA", "B_Plane_Fighter_01_F", 50000, "vehicle", "variant_blackwaspAA"],
+	["F/A-181 Black Wasp CAS", "B_Plane_Fighter_01_F", 75000, "vehicle", "variant_blackwaspCAS"],
 
-	["To-201 Shikra (Gun-Only)", "O_Plane_Fighter_02_Stealth_F", 25000, "vehicle"], // no missiles or bombs
+	["To-201 Shikra (Gun-Only)", "O_Plane_Fighter_02_Stealth_F", 30000, "vehicle"], // no missiles or bombs
 	["To-201 Shikra AA", "O_Plane_Fighter_02_F", 50000, "vehicle", "variant_shikraAA"],
 	["To-201 Shikra CAS", "O_Plane_Fighter_02_F", 75000, "vehicle", "variant_shikraCAS"],
 
@@ -1065,30 +1065,30 @@ planesArray = compileFinal str
 	["To-199 Neophron CAS", "O_Plane_CAS_02_dynamicLoadout_F", 75000, "vehicle"],
 
 	["V-44 X Blackfish (Infantry)", "B_T_VTOL_01_infantry_F", 10000, "vehicle"],
-	["V-44 X Blackfish (Gunship)", "B_T_VTOL_01_armed_F", 60000, "vehicle"],
-	["Y-32 Xi'an", "O_T_VTOL_02_infantry_dynamicLoadout_F", 60000, "vehicle"],
+	["V-44 X Blackfish (Gunship)", "B_T_VTOL_01_armed_F", 65000, "vehicle"],
+	["Y-32 Xi'an", "O_T_VTOL_02_infantry_dynamicLoadout_F", 65000, "vehicle"],
 
-	["KH-3A Fenghuang Missile UAV", "O_T_UAV_04_CAS_F", 30000, "vehicle"],
+	["KH-3A Fenghuang Missile UAV", "O_T_UAV_04_CAS_F", 50000, "vehicle", "HIDDEN"],
 
-	["MQ4A Greyhawk Missile UAV", "B_UAV_02_dynamicLoadout_F", 30000, "vehicle", "variant_greyhawkMissile"],
-	["K40 Ababil-3 Missile UAV", "O_UAV_02_dynamicLoadout_F", 30000, "vehicle", "variant_greyhawkMissile"],
-	["K40 Ababil-3 Missile UAV", "I_UAV_02_dynamicLoadout_F", 30000, "vehicle", "variant_greyhawkMissile"],
+	["MQ4A Greyhawk Missile UAV", "B_UAV_02_dynamicLoadout_F", 50000, "vehicle", "variant_greyhawkMissile", "HIDDEN"],
+	["K40 Ababil-3 Missile UAV", "O_UAV_02_dynamicLoadout_F", 50000, "vehicle", "variant_greyhawkMissile", "HIDDEN"],
+	["K40 Ababil-3 Missile UAV", "I_UAV_02_dynamicLoadout_F", 50000, "vehicle", "variant_greyhawkMissile", "HIDDEN"],
 
-	["MQ4A Greyhawk Bomber UAV", "B_UAV_02_dynamicLoadout_F", 20000, "vehicle", "variant_greyhawkBomber"], // Bomber UAVs are a lot harder to use, hence why they are cheaper than Missile ones
-	["K40 Ababil-3 Bomber UAV", "O_UAV_02_dynamicLoadout_F", 20000, "vehicle", "variant_greyhawkBomber"],
-	["K40 Ababil-3 Bomber UAV", "I_UAV_02_dynamicLoadout_F", 20000, "vehicle", "variant_greyhawkBomber"],
+	["MQ4A Greyhawk Bomber UAV", "B_UAV_02_dynamicLoadout_F", 30000, "vehicle", "variant_greyhawkBomber", "HIDDEN"], // Bomber UAVs are a lot harder to use, hence why they are cheaper than Missile ones
+	["K40 Ababil-3 Bomber UAV", "O_UAV_02_dynamicLoadout_F", 30000, "vehicle", "variant_greyhawkBomber", "HIDDEN"],
+	["K40 Ababil-3 Bomber UAV", "I_UAV_02_dynamicLoadout_F", 30000, "vehicle", "variant_greyhawkBomber", "HIDDEN"],
 
-	["MQ4A Greyhawk Cluster UAV", "B_UAV_02_dynamicLoadout_F", 25000, "vehicle", "variant_greyhawkCluster"],
-	["K40 Ababil-3 Cluster UAV", "O_UAV_02_dynamicLoadout_F", 25000, "vehicle", "variant_greyhawkCluster"],
-	["K40 Ababil-3 Cluster UAV", "I_UAV_02_dynamicLoadout_F", 25000, "vehicle", "variant_greyhawkCluster"],
+	["MQ4A Greyhawk Cluster UAV", "B_UAV_02_dynamicLoadout_F", 40000, "vehicle", "variant_greyhawkCluster", "HIDDEN"],
+	["K40 Ababil-3 Cluster UAV", "O_UAV_02_dynamicLoadout_F", 40000, "vehicle", "variant_greyhawkCluster", "HIDDEN"],
+	["K40 Ababil-3 Cluster UAV", "I_UAV_02_dynamicLoadout_F", 40000, "vehicle", "variant_greyhawkCluster", "HIDDEN"],
 
-	["MQ4A Greyhawk DAGR UAV", "B_UAV_02_dynamicLoadout_F", 60000, "vehicle", "variant_greyhawkDAGR"],
-	["K40 Ababil-3 DAGR UAV", "O_UAV_02_dynamicLoadout_F", 60000, "vehicle", "variant_greyhawkDAGR"],
-	["K40 Ababil-3 DAGR UAV", "I_UAV_02_dynamicLoadout_F", 60000, "vehicle", "variant_greyhawkDAGR"],
+	["MQ4A Greyhawk DAGR UAV", "B_UAV_02_dynamicLoadout_F", 70000, "vehicle", "variant_greyhawkDAGR", "HIDDEN"],
+	["K40 Ababil-3 DAGR UAV", "O_UAV_02_dynamicLoadout_F", 70000, "vehicle", "variant_greyhawkDAGR", "HIDDEN"],
+	["K40 Ababil-3 DAGR UAV", "I_UAV_02_dynamicLoadout_F", 70000, "vehicle", "variant_greyhawkDAGR", "HIDDEN"],
 
-	["UCAV Sentinel Missile", "B_UAV_05_F", 40000, "vehicle", "variant_sentinelMissile"],
-	["UCAV Sentinel Bomber", "B_UAV_05_F", 20000, "vehicle", "variant_sentinelBomber"],
-	["UCAV Sentinel Cluster", "B_UAV_05_F", 25000, "vehicle", "variant_sentinelCluster"]
+	["UCAV Sentinel Missile", "B_UAV_05_F", 50000, "vehicle", "variant_sentinelMissile", "HIDDEN"],
+	["UCAV Sentinel Bomber", "B_UAV_05_F", 30000, "vehicle", "variant_sentinelBomber", "HIDDEN"],
+	["UCAV Sentinel Cluster", "B_UAV_05_F", 40000, "vehicle", "variant_sentinelCluster", "HIDDEN"]
 ];
 
 boatsArray = compileFinal str
@@ -1174,11 +1174,11 @@ colorsArray = compileFinal str
 			["Hello Kitty", _texDir + "hellokitty.paa"],
 			["Hex", _texDir + "hex.paa"],
 			["Hippie", _texDir + "hippie.paa"],
-			["ISIS", _texDir + "isis.paa"],
+//			["ISIS", _texDir + "isis.paa"],
 			["Leopard", _texDir + "leopard.paa"],
 			["Mountain Dew", _texDir + "mtndew.paa"],
 			["'Murica", _texDir + "murica.paa"],
-			["Nazi", _texDir + "nazi.paa"],
+//			["Nazi", _texDir + "nazi.paa"],
 			["Orange Camo", _texDir + "camo_orange.paa"],
 			["Pink Camo", _texDir + "camo_pink.paa"],
 			["Pride", _texDir + "pride.paa"],
