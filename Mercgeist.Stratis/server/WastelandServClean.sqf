@@ -30,7 +30,7 @@ _objCleanup =
 
 	if (_isWreck) then
 	{
-		if (_baseClass in ["UAV_01_base_F","UAV_06_base_F"] && {fuel _obj > 0 || !isNull ((uavControl _obj) select 0)}) exitWith
+		if (_baseClass in ["UAV_01_base_F","UAV_06_base_F","UGV_02_Base_F"] && {fuel _obj > 0 || !isNull ((uavControl _obj) select 0)}) exitWith
 		{
 			if (_processedDeath > 0) then
 			{
@@ -151,7 +151,7 @@ _storeCleanup =
 };
 
 
-_storeNPCs = allUnits select {[["GenStore","GunStore","ArmsDealer","VehStore"], vehicleVarName _x] call fn_startsWith};
+_storeNPCs = allUnits select {[["GenStore","GunStore","VehStore"], vehicleVarName _x] call fn_startsWith};
 _baseClass = "";
 
 if (!isServer) then

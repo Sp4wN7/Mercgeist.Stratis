@@ -71,7 +71,7 @@ switch (_side) do
 			};
 			default
 			{
-				if (_item == "uniform") then { _result = "U_O_CombatUniform_oucamo" };
+				if (_item == "uniform") then { _result = "U_O_officer_noInsignia_hex_F" };
 				if (_item == "vest") then { _result = _defaultVest };
 			};
 		};

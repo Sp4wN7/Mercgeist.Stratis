@@ -29,7 +29,7 @@ switch (_lockState) do
 
 		// Points of interest
 		_poiDist = ["A3W_poiObjLockDistance", 100] call getPublicVar;
-		_poiMarkers = allMapMarkers select {markerType _x == "Empty" && {[["GenStore","GunStore","ArmsDealer","VehStore","Mission_","ForestMission_","LandConvoy_"], _x] call fn_startsWith}};
+		_poiMarkers = allMapMarkers select {markerType _x == "Empty" && {[["GenStore","GunStore","VehStore","Mission_","ForestMission_","LandConvoy_"], _x] call fn_startsWith}};
 
 		if ({(getPosASL player) vectorDistance (ATLtoASL getMarkerPos _x) < _poiDist} count _poiMarkers > 0) exitWith
 		{
