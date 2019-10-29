@@ -199,7 +199,7 @@ if (!isNil "_backpacks") then
 	{
 		_x params ["_bpack"];
 
-		if (!(_bpack isKindOf "Weapon_Bag_Base") || {[["_UAV_","_Designator_"], _bpack] call fn_findString != -1}) then
+				if (!(_bpack isKindOf "Weapon_Bag_Base") || {[["_UAV_","_UGV_","_Designator_"], _bpack] call fn_findString != -1}) then
 		{
 			_veh addBackpackCargoGlobal _x;
 		};

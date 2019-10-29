@@ -79,7 +79,6 @@ briefing = 0; // if 0, skip Continue button
 #include "addons\CHVD\dialog.hpp"
 
 //MERCGEIST
-#include "addons\beacondetector\sound\cfgsounds.hpp"
 #include "client\systems\hud\dialog\downloadData.hpp"
 
 class RscTitles
