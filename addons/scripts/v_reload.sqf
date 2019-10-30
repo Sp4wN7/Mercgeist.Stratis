@@ -71,9 +71,9 @@ if((player == driver _vehicle) && (!_eng))then {
 	if(_type == "O_Plane_Fighter_02_F") then {_price = 2500;};
 	if(_type == "I_Plane_Fighter_04_F") then {_price = 2500;};
 	if(_type == "C_Plane_Civil_01_F") then {_price = 750;};
-	if(_type == "B_MBT_01_arty_F") then {_price = 5000;};
-	if(_type == "O_MBT_02_arty_F") then {_price = 5000;};
-	if(_type == "B_MBT_01_mlrs_F") then {_price = 5000;};
+	if(_type == "B_MBT_01_arty_F") then {_price = 50000;};
+	if(_type == "O_MBT_02_arty_F") then {_price = 50000;};
+	if(_type == "B_MBT_01_mlrs_F") then {_price = 50000;};
 
 	if (_playerMoney < _price) then {
 		_text = format ["Not enough money! You need $%1 to resupply %2. Service cancelled!",_price,typeOf _vehicle];
